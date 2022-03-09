@@ -112,3 +112,27 @@ You will get a response back that resembles JSON with the encrypted name and dum
     "dummy_key": 278440108655992
 }
 `
+
+`
+<project_root>/
+ | - .venv/
+ | - .vscode/
+ | - my_first_function/
+ | | - __init__.py
+ | | - function.json
+ | | - example.py
+ | - my_second_function/
+ | | - __init__.py
+ | | - function.json
+ | - shared_code/
+ | | - __init__.py
+ | | - my_first_helper_function.py
+ | | - my_second_helper_function.py
+ | - tests/
+ | | - test_my_second_function.py
+ | - .funcignore
+ | - host.json
+ | - local.settings.json
+ | - requirements.txt
+ | - Dockerfile
+`
