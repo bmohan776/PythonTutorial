@@ -28,4 +28,8 @@ Make sure you are in the encryption_and_decryption directory:
 `cd encryption_and_decryption`
 Create the new function using:
 `func new`
+
 At the prompt, choose HTTP trigger. Then name the function encrypt.
+
+Encrypting Input
+Open the file encrypt/__init__.py. You should see boilerplate code for an HTTP trigger function. This function will take name as a parameter and return "Hello name!". Let's add code at the bottom of this file that will instead encrypt the name using a random set of token bytes.
