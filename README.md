@@ -91,3 +91,24 @@ def encrypt(name: str) -> Tuple[int, int]:
 
     return encrypted_name, dummy_key
    `
+   
+   
+   
+## Testing encrypt
+Make sure you are in the encryption_and_decryption directory and run the Function App with the command:
+
+`func host start`
+
+The output of this command includes a link to the HTTP endpoint for this function: http://localhost:7071/api/encrypt.
+
+Visiting this URL in a browser will call the Azure Function and you will get the response "Please pass a name on the query string or in the request body". Pass the Function a name parameter by appending ?name=Sophia to the URL so that it reads:
+
+http://localhost:7071/api/encrypt?name=Sophia
+
+You will get a response back that resembles JSON with the encrypted name and dummy key:
+`
+{
+    "encrypted_name": 191667540651033,
+    "dummy_key": 278440108655992
+}
+`
