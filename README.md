@@ -5,18 +5,19 @@ Python Azure Functions App requires that you work within a virtual environment. 
 
 Bash (MacOS or Linux)
 
-python3.6 -m venv .env  
-source .env/bin/activate
+`python3.6 -m venv .env`
+`source .env/bin/activate`
 
 PowerShell or Command Prompt (Windows)
 py -3.6 -m venv .env
-.\.env\Scripts\activate
+
+`.\.env\Scripts\activate`
 
 
 Initialize Your Azure Function App
 Execute the following command to create a new Function App:
 
-func init encryption_and_decryption
+`func init encryption_and_decryption`
 
 There is now a folder called encryption_and_decryption with the boilerplate code for a Python Azure Function App. If you would like, take some time to open the code in your favorite editor and have a look around.
 
@@ -24,7 +25,7 @@ There is now a folder called encryption_and_decryption with the boilerplate code
 
 Create the encrypt Function
 Make sure you are in the encryption_and_decryption directory:
-cd encryption_and_decryption
+`cd encryption_and_decryption`
 Create the new function using:
-func new
+`func new`
 At the prompt, choose HTTP trigger. Then name the function encrypt.
